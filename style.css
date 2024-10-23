@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #D2691E;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    background-image: url('./image.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about {
+    padding: 40px 20px;
+    background: #1a1a1a; /* Background matching the design */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.text-container {
+    flex: 3;
+    text-align: right;
+}
+
+.text-container h1 {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+}
