@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./artifacts/enokiLogo.png" alt="ENOKI Logo" class="logo-img">
+        </div>
+        <nav class="nav">
+            <a href="#brands">Our Brands</a>
+            <a href="#careers">Careers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) { // you can adjust the value according to your needs
+                $(".header").addClass("scrolled");
+            } else {
+                $(".header").removeClass("scrolled");
+            }
+        });
+    });
+    </script>
+</body>
+</html>
