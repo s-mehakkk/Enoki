@@ -30,11 +30,11 @@
     text-decoration: none;
     margin-left: 25px;
     margin-right: 35px;
-    font-size: medium;
+    font-size: large;
 }
 
 .nav a:hover {
-    color: #d2211e;
+    color: #ff2a2a;
 }
 
 .header.scrolled {
