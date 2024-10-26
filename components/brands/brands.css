@@ -1,0 +1,96 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #161616;
+    overflow: hidden;
+}
+
+.block {
+    position: relative;
+    width: 1300px;
+    height: 660px;
+    margin: 10px 50px 20px 80px;
+}
+
+
+
+h1 {
+    font-family: "Monument Extended", Serif;
+    font-weight: lighter;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
+}
+
+.order-now {
+    font-family: "Georgia", serif; /* Or Times New Roman */
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+.order-now:hover {
+    color: #f0a500; /* Change color on hover for better UX */
+    text-decoration: none; /* Removes underline on hover */
+}
+
+.text-container {
+    position: absolute;
+    bottom: 120px; /* Adjusts the vertical position */
+    right:  70px; /* Adjusts the horizontal position */
+}
+.order-container{
+    position: absolute;
+    bottom: 90px; /* Adjusts the vertical position */
+    right: 75px; /* Adjusts the horizontal position */   
+}
+.block-1 {
+    background: url(img-on.jpeg) no-repeat center;
+    background-size: contain;
+}
+
+.block-2 {
+    background: url(img-on.jpeg) no-repeat center;
+    background-size: contain;
+}
+.block-3 {
+    background: url(img-on.jpeg) no-repeat center;
+    background-size: contain;
+}
+.block-4 {
+    background: url(img-on.jpeg) no-repeat center;
+    background-size: contain;
+}
+.block-5 {
+    background: url(img-on.jpeg) no-repeat center;
+    background-size: contain;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+
+.block-1 h1,
+.block-3 h1,
+.block-5 h1 {
+    bottom: 0;
+    right: -60px;
+}
+
+.block-2 h1,
+.block-4 h1 {
+    right: -60px;
+}
