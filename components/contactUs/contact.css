@@ -1,15 +1,20 @@
 h2 {
     font-size: 2.25em;
     font-weight: 40;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
 }
+
 
 h3 {
     font-size: 1.6em;
     font-weight: 40;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
 }
+
 
 .mainDiv{
     display: flex;
@@ -39,28 +44,16 @@ h3 {
     padding: 0;
 }
 
-.topDiv h2{
-    margin-top: 2rem;
-    margin-bottom: 0.25rem;
-    text-align: center;
-}
-
 .leftContact{
     padding: 2rem;
     margin: 12px;
-    background-color: #a91515c3;
-    color: black;
+    background-color: #d71325;
+    color: white;
     border-radius: 0.5rem;
     width: 40%;
     border-radius: 8px;
 }
 
-.leftContact h3{
-    margin-bottom: 3rem;
-    /* color: white; */
-    text-align: left;
-    font-weight: 700;
-}
 .contact-detail{
     display: flex;
     align-items: center;
@@ -143,18 +136,18 @@ h3 {
     font-size: x-small;
     font-weight: 500;
     color: white;
-    text-transform: capitalize;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     transition-duration: 300ms;
-    background-color: black;
+    background-color: #d71325;
+    border-color: #d71325;
     border-radius: 0.5rem;
     /* tracking-wide   transform  */
 }
 
 .formThird button:hover {
-    background-color: rgb(30 41 59);
+    background-color: rgb(108, 7, 17);
 }
 
 .header {
