@@ -48,7 +48,7 @@ body {
 
 .about {
     padding: 40px 20px;
-    background: #1a1a1a; /* Background matching the design */
+    background: #1a1a1a;
     text-align: center;
 }
 
@@ -78,5 +78,9 @@ body {
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     line-height: 1.2;
+}
+
+.header{
+    background: none;
 }
 
