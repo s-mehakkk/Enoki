@@ -55,24 +55,24 @@ h1 {
     right: 75px; /* Adjusts the horizontal position */   
 }
 .block-1 {
-    background: url(img-on.jpeg) no-repeat center;
+    background: url(../../artifacts/img-on.jpeg) no-repeat center;
     background-size: contain;
 }
 
 .block-2 {
-    background: url(img-on.jpeg) no-repeat center;
+    background: url(../../artifacts/img-on.jpeg) no-repeat center;
     background-size: contain;
 }
 .block-3 {
-    background: url(img-on.jpeg) no-repeat center;
+    background: url(../../artifacts/img-on.jpeg) no-repeat center;
     background-size: contain;
 }
 .block-4 {
-    background: url(img-on.jpeg) no-repeat center;
+    background: url(../../artifacts/img-on.jpeg) no-repeat center;
     background-size: contain;
 }
 .block-5 {
-    background: url(img-on.jpeg) no-repeat center;
+    background: url(../../artifacts/img-on.jpeg) no-repeat center;
     background-size: contain;
 }
 
