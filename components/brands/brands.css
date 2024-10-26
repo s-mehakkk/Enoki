@@ -12,7 +12,7 @@ body {
 .block {
     position: relative;
     width: 1300px;
-    height: 660px;
+    height: 560px;
     margin: 10px 50px 20px 80px;
 }
 
@@ -93,4 +93,8 @@ h1 {
 .block-2 h1,
 .block-4 h1 {
     right: -60px;
+}
+
+.footerContainer {
+    padding-top: 650px;
 }

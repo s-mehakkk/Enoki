@@ -1,14 +1,20 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.pdiv {
-    background-color: rgb(202, 177, 227);
-    padding-top: 100px;
-    text-align: center;
-    height: 60px;
+#gallery {
+    height: 300px; /* Fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    white-space: nowrap; /* Keeps items in a horizontal line */
 }
 
-.header{
-    background-color: #1a1a1a;
+#gallery div {
+    display: inline-block;
+    height: 280px; /* Smaller than the gallery to show the scroll effect */
+    width: 1000px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    line-height: 280px;
+    text-align: center;
+}
+
+.content p {
+    margin: 20px;
+    font-size: 20px;
 }

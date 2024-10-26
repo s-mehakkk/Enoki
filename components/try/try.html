@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./try.css">
-    <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="../brands/brands.css">  
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../brands/brands.js"></script>
-    <script> 
-    $(function(){
-      $("#includedHeader").load("../header/header.html"); 
-    });
-    $(function(){
-      $("#includedBrands").load("../brands/brands.html"); 
-    });
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery with Vertical Scroll</title>
+<link rel="stylesheet" href="try.css">
 </head>
 <body>
-    <div id="includedHeader" class="headerDiv"></div>
-    <div class="pdiv">
-        Hello pookie
-    </div>
-    <div id="includedBrands"></div>
+<div class="content">
+    <p>Content above the gallery...</p>
+    <!-- More content can go here -->
+</div>
+<div id="gallery">
+    <!-- Images or content of the gallery -->
+    <div>Image 1</div>
+    <div>Image 2</div>
+    <div>Image 3</div>
+    <!-- More images can be added here -->
+</div>
+<div class="content">
+    <p>Content below the gallery...</p>
+    <!-- More content can go here -->
+</div>
+<script src="try.js"></script>
 </body>
 </html>
