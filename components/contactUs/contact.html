@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includedFooter").load("../footer/footer.html"); 
+    });
+    $(function(){
+      $("#includedHeader").load("../header/header.html"); 
+    });
+    </script>
+    
 </head>
 
 <body class="cbody">
+    <div id="includedHeader"></div>
     <div class='mainDiv'>
         <div class='topDiv'>
             <h2>Contact Us</h2>
@@ -84,6 +98,7 @@
             </div>
         </div>
     </div>
+    <div id="includedFooter"></div>
 </body>
 
 </html>
