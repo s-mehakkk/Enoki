@@ -10,8 +10,6 @@ fbody {
   background: #333;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 100vh;
-  /* max-height: 20vh; */
 }
 
 .footer {
@@ -72,4 +70,14 @@ fbody {
   margin: 15px 0 10px 0;
   font-size: small;
   font-weight: 300;
+}
+
+.menu__item{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.social-icon__item{
+  margin-right: 5px;
+  margin-left: 5px;
 }
