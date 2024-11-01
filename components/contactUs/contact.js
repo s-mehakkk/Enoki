@@ -79,4 +79,8 @@ span3.onclick = function() {
     });
 }
 
+document.querySelector("form").addEventListener("submit", function() {
+  document.getElementById("loader").classList.add("active");
+});
+
 
