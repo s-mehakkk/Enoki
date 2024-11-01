@@ -33,6 +33,12 @@
     margin-left: 35px;
     margin-right: 35px;
     font-size: medium;
+    font-weight: normal;
+}
+
+a.active {
+    color: aqua;
+    font-weight: bold;
 }
 
 .nav a:hover {
