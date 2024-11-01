@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brands</title>
+    <link rel="stylesheet" href="ourBrands.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../brands/brands.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedFooter").load("../footer/footer.html");
+        });
+        $(function () {
+            $("#includedHeader").load("../header/header.html");
+        });
+        $(document).ready(function () {
+            $('#includedBrands').load('../brands/brands.html', function () {
+                // After loading, apply the styles and initialize the GSAP scroll functionality
+                $.getScript("../brands/brands.js");
+            });
+        });
+    </script>
+
+</head>
+
+<body class="cbody">
+    <div id="includedHeader"></div>
+    <!-- <div class='mainDiv'>
+        <h2>Careers</h2>
+        <p class="subtext">Join us!</p>
+        <div class="empty"></div>
+    </div> -->
+    <div id="includedBrands"></div>
+    <div id="includedFooter"></div>
+</body>
+
+</html>

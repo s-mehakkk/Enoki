@@ -12,6 +12,13 @@ $(function(){
 $(function(){
     $("#includedFooter").load("./components/footer/footer.html"); 
 });
+$(document).ready(function() {
+    $('#includedBrands').load('./components/brands/brands.html', function() {
+        // After loading, apply the styles and initialize the GSAP scroll functionality
+        $.getScript("./components/brands/brands.js");
+    });
+});
+
 
 window.onload = function() {
     var headerTwo = document.getElementById('headerTwo');

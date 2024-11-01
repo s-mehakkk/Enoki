@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    background: #15151e;
+    background: #1a1a1a;
+    /* 15151e */
     overflow-x: hidden;
 }
 
@@ -38,6 +39,8 @@ body {
     margin-top: 100px;
     margin-left: 100px;
     margin-bottom: 100px;
+    background-color: black;
+
 }
 
 .block {
@@ -45,6 +48,8 @@ body {
     width: 1300px;
     height: 560px;
     margin: 10px 50px 20px 80px;
+    background-color: black;
+
 }
 
 .block h1 {
@@ -73,7 +78,7 @@ body {
     text-decoration: none; /* Removes underline on hover */
 }
 
-.text-container {
+.brand-text-container {
     position: absolute;
     bottom: 120px; /* Adjusts the vertical position */
     right: 70px; /* Adjusts the horizontal position */
@@ -120,3 +125,7 @@ body {
 .block-2 h1, .block-4 h1 {
     right: -60px;
 }
+
+/* .gsap-marker-scroller-end .gsap-marker-endlightBG{
+    display: none;
+} */
