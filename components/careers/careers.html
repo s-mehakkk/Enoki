@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers</title>
     <link rel="stylesheet" href="careers.css">
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="../header/header.css">
+    <!-- <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(function () {
-            $("#includedFooter").load("../footer/footer.html");
-        });
-        $(function () {
-            $("#includedHeader").load("../header/header.html");
-        });
+        $(function(){
+      $("#includedFooter").load("../footer/footer.html", function() {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "../footer/footer.css"
+        }).appendTo("head"); 
+      });
+    });
+    $(function(){
+      $("#includedHeader").load("../header/header.html", function() {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "../header/header.css"
+        }).appendTo("head"); 
+      }); 
+    });
     </script>
 
 </head>

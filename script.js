@@ -6,19 +6,36 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('try-placeholder').innerHTML='<object type="text/html" data="./components/try/try.html"></object>';
 });
 
-$(function(){
-    $("#includedHeader").load("./components/header/header.html"); 
-});
-$(function(){
-    $("#includedFooter").load("./components/footer/footer.html"); 
-});
-$(document).ready(function() {
-    $('#includedBrands').load('./components/brands/brands.html', function() {
-        // After loading, apply the styles and initialize the GSAP scroll functionality
-        $.getScript("./components/brands/brands.js");
+$(function () {
+    $("#includedHeader").load("./components/header/header.html", function () {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./components/header/header.css"
+        }).appendTo("head");
     });
 });
 
+$(function () {
+    $("#includedFooter").load("./components/footer/footer.html", function () {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./components/footer/footer.css"
+        }).appendTo("head");
+    });
+});
+
+$(document).ready(function () {
+    $('#includedBrands').load('./components/brands/brands.html', function () {
+        $.getScript("./components/brands/brands.js");
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./components/brands/brands.css"
+        }).appendTo("head");
+    });
+});
 
 window.onload = function() {
     var headerTwo = document.getElementById('headerTwo');
