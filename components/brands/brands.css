@@ -13,6 +13,13 @@ body {
     flex-wrap: nowrap;
 }
 
+.racesWrapper{
+    display: flex;
+    align-items: center;
+    height: 75vh; /* Adjust this value to control how centered it appears */
+    overflow: hidden;
+}
+
 /* Existing styling */
 .lightBG {
     background: #313143;
@@ -46,7 +53,7 @@ body {
 .block {
     position: relative;
     width: 1300px;
-    height: 560px;
+    height: 600px;
     margin: 10px 50px 20px 80px;
     background-color: black;
 
