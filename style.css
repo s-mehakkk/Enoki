@@ -86,6 +86,8 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     line-height: 1.2;
     font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .text-container h1 {
@@ -99,21 +101,19 @@ body {
     width: fit-content;
 }
 
-.about {
+.homeSection{
     color: #ccc;
     background: #1a1a1a;
     text-align: left;
     padding: 3rem;
 }
 
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.about p {
+.homeSection p {
     line-height: 1.6;
     font-size: 16px;
+}
+
+.about {
     
 }
 
@@ -123,7 +123,6 @@ body {
 
 
 
-.brands-section {
-    padding-top: 40px; /* Adjust this value to increase or decrease the space */
-    text-align: center; /* Optional: center-align the "Our Brands" heading */
+.brands {
+    padding-top: 40px;
 }
