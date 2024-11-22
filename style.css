@@ -113,16 +113,20 @@ body {
     font-size: 16px;
 }
 
-.about {
-    
-}
-
 .header{
     background: none;
 }
 
 
-
 .brands {
     padding-top: 40px;
+}
+
+#our-brands {
+    padding-top: 100px; /* Adjust based on your navbar height */
+    margin-top: -100px; /* Negative margin to offset the padding */
+}
+
+html {
+    scroll-behavior: smooth;
 }
