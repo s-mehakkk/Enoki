@@ -9,11 +9,7 @@ body{
     width: 100%;
 }
 
-h2 {
-    font-size: 2.25em;
-    font-weight: 40;
-    margin-bottom: 1rem;
-}
+
 
 .cbody {
     background-color: #f0f0f0;
@@ -22,6 +18,60 @@ h2 {
     padding: 0;
 }
 
+
+.career-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 90vh; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Matches Rebel Foods' dark theme */
+    color: #fff; /* White text color */
+    padding: 0 10%;
+    font-family: Arial, sans-serif;
+}
+
+.career-content {
+    flex: 1;
+    text-align: left;
+}
+
+.career-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f44336; /* Gold color for the heading */
+}
+
+.career-content p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.career-email {
+    color: #00aaff; /* Blue for the email link */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.career-email:hover {
+    text-decoration: underline;
+}
+
+.career-graphic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-graphic img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+}
+
+
 .mainDiv{
     display: flex;
     flex-direction: column;
@@ -29,9 +79,7 @@ h2 {
     padding-top: 80px;
 }
 
-.subtext{
-    color: #3b3b3d
-}
+
 
 .empty{
     height: 450px;
