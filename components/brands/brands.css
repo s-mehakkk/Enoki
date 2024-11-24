@@ -52,7 +52,7 @@ body {
 
 .block {
     position: relative;
-    width: 1300px;
+    width: 1280px;
     height: 650px;
     margin: 10px 50px 20px 80px;
     background-color: black;
@@ -101,6 +101,7 @@ body {
 .block-1 {
     background: url('image.jpeg') no-repeat center;
     background-size: contain;
+    margin-left:-120px;
 }
 
 .block-2 {
@@ -121,6 +122,7 @@ body {
 .block-5 {
     background: url('image.jpeg') no-repeat center;
     background-size: contain;
+
 }
 
 /* Specific adjustments for different blocks */
