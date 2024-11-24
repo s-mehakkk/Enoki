@@ -44,7 +44,7 @@ body {
 /* New container and block styling */
 .container {
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-bottom: 100px;
     background-color: #1a1a1a;
 
@@ -52,8 +52,8 @@ body {
 
 .block {
     position: relative;
-    width: 1280px;
-    height: 650px;
+    width: 1300px;
+    height: 700px;
     margin: 10px 50px 20px 80px;
     background-color: black;
 
@@ -101,7 +101,7 @@ body {
 .block-1 {
     background: url('image.jpeg') no-repeat center;
     background-size: contain;
-    margin-left:-120px;
+    margin-left:0px;
 }
 
 .block-2 {
