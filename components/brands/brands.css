@@ -99,28 +99,28 @@ body {
 
 /* Background images for each block */
 .block-1 {
-    background: url('image.jpeg') no-repeat center;
+    background: url('../../artifacts/enoki.png') no-repeat center;
     background-size: contain;
     margin-left:0px;
 }
 
 .block-2 {
-    background: url('image.jpeg') no-repeat center;
+    background: url('../../artifacts/tahini.png') no-repeat center;
     background-size: contain;
 }
 
 .block-3 {
-    background: url('image.jpeg') no-repeat center;
+    background: url('../../artifacts/ambersar.png') no-repeat center;
     background-size: contain;
 }
 
 .block-4 {
-    background: url('image.jpeg') no-repeat center;
+    background: url('../../artifacts/tobiko.png') no-repeat center;
     background-size: contain;
 }
 
 .block-5 {
-    background: url('image.jpeg') no-repeat center;
+    background: url('../../artifacts/rumali.png') no-repeat center;
     background-size: contain;
 
 }
