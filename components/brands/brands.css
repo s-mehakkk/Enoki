@@ -62,17 +62,17 @@ body {
 .block h1 {
     font-family: "Monument Extended", Serif;
     font-weight: lighter;
-    font-size: 64px;
+    font-size: 54px;
     letter-spacing: 2px;
     margin: 0;
-    color: #fff;
+    color: #f7f7f7;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
 }
 
 .order-now {
     font-family: "Georgia", serif; /* Or Times New Roman */
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: #fff;
     margin: 10px 0;
@@ -87,13 +87,17 @@ body {
 
 .brand-text-container {
     position: absolute;
-    bottom: 120px; /* Adjusts the vertical position */
+    bottom: 80px; /* Adjusts the vertical position */
     right: 70px; /* Adjusts the horizontal position */
+}
+
+.brand-text-container h1 {
+
 }
 
 .order-container {
     position: absolute;
-    bottom: 90px; /* Adjusts the vertical position */
+    bottom: 55px; /* Adjusts the vertical position */
     right: 75px; /* Adjusts the horizontal position */
 }
 
