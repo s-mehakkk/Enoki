@@ -204,3 +204,63 @@ h3 {
     visibility: visible;
     opacity: 1;
 }
+
+/* Existing styles... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .secondDiv {
+        flex-direction: column; /* Stack the form and contact details vertically */
+        height: auto; /* Adjust height for stacked layout */
+        width: auto;
+        margin: 30px 0 0 0;
+    }
+
+    .rightForm {
+        order: 1; /* Display form first */
+        width: 100%;
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .leftContact {
+        order: 2; /* Display contact info below the form */
+        width: 100%;
+        margin: 1rem 0; /* Add margin for spacing */
+        padding: 1rem; /* Adjust padding for better visibility */
+        background-color: #f0f0f0;
+        color: black;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.25rem; /* Adjust subheading size for smaller screens */
+    }
+
+    .formInput {
+        font-size: 1rem; /* Adjust input text size for smaller screens */
+    }
+
+    .formButton {
+        width: 100%; /* Full-width button on small screens */
+        padding: 0.75rem; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .formInput {
+        font-size: 0.9rem;
+    }
+}
