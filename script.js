@@ -13,7 +13,7 @@ $(function () {
             type: "text/css",
             href: "./components/header/header.css"
         }).appendTo("head");
-    });
+    })
 });
 
 $(function () {
