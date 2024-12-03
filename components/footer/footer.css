@@ -81,3 +81,32 @@ fbody {
   margin-right: 5px;
   margin-left: 5px;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 20px;
+  }
+
+  .social-icon__item {
+    margin: 5px 0;
+  }
+
+  /* .menu {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .menu__item {
+    margin: 10px 0;
+  } */
+
+  .menu{
+    display : none
+  }
+
+  .footer p {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+  }
+}
