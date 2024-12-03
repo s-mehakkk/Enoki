@@ -139,6 +139,10 @@ body {
     right: -60px;
 }
 
-/* .gsap-marker-scroller-end .gsap-marker-endlightBG{
-    display: none;
-} */
+.ambarsar-logo{
+    background-image: url('../../artifacts/EHLogo.png');
+    /* background-color: #f0a500; */
+    width: 40px;
+    height: 40px;
+    
+}
