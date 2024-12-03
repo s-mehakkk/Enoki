@@ -88,3 +88,49 @@ body{
 .header {
     background-color: #1a1a1a;
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-container {
+        flex-direction: column;
+        padding: 0 5%;
+        height: 400px;
+        margin-top: 140px;
+        background-color: #f0f0f0;
+    }
+
+    .career-content h1 {
+        font-size: 2rem;
+    }
+
+    .career-content p, .career-email {
+        font-size: 1.5rem;
+    }
+
+    .career-graphic img {
+        width: 70%;
+        max-width: 400px;
+    }
+    .career-content p, .career-email {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .career-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .career-content p, .career-email {
+        font-size: 1rem;
+    }
+
+    .career-graphic img {
+        width: 90%;
+        max-width: 200px;
+    }
+    .career-content p, .career-email {
+        font-size: 1.2rem;
+    }
+}
