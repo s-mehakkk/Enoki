@@ -15,14 +15,36 @@
             </a>
         </div>
         <nav class="nav">
-            <a class = "" href="/">Home</a>
+            <ul class = "sidebar">
+                <li><a class = "" href="/">Home</a></li>
+                <li><a class = "" href="/#our-brands">Our Brands</a></li>
+                <li><a class = "" href="/components/careers/careers.html">Careers</a></li>
+                <li><a class = "" href="/components/gallery/gallery.html">Gallery</a></li>
+                <li><a class = "" href="/components/contactUs/contact.html">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a class = "hideOnMobile" href="/">Home</a></li>
+                <li><a class = "hideOnMobile" href="/#our-brands">Our Brands</a></li>
+                <li><a class = "hideOnMobile" href="/components/careers/careers.html">Careers</a></li>
+                <li><a class = "hideOnMobile" href="/components/gallery/gallery.html">Gallery</a></li>
+                <li><a class = "hideOnMobile" href="/components/contactUs/contact.html">Contact Us</a></li>
+                <li><button onclick="showSidebar()" class="hamburger" id="hamburger">
+                    ☰
+                </button></li>
+            </ul>
+            <!-- <a class = "" href="/">Home</a>
             <a class = "" href="/#our-brands">Our Brands</a>
             <a class = "" href="/components/careers/careers.html">Careers</a>
             <a class = "" href="/components/gallery/gallery.html">Gallery</a>
-            <a class = "" href="/components/contactUs/contact.html">Contact Us</a>
+            <a class = "" href="/components/contactUs/contact.html">Contact Us</a> -->
         </nav>
     </header>
-
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'            
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
