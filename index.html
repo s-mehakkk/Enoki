@@ -15,6 +15,11 @@
     <div id="includedHeader"></div>
     <div id="mainContent">
         <section class="hero">
+            <video id="background-video" autoplay muted loop class="background-video">
+                <source src="./artifacts/landscape.mp4" type="video/mp4" media="(min-width: 400px)">
+                <source src="./artifacts/portrait.mp4" type="video/mp4" media="(min-width: 400px)">
+                Your browser does not support the video tag.
+            </video>
             <div class="overlay"></div>
             <div class="content">
                 <div class="text-container">
@@ -38,6 +43,22 @@
     </div>
     
     <div id="includedFooter"></div>
+
+    <script>
+        function updateVideoSource() {
+            const video = document.getElementById('background-video');
+            const smallScreenVideo = './artifacts/portrait.mp4';
+            const largeScreenVideo = './artifacts/landscape.mp4';
+    
+            if (window.innerWidth <= 599) {
+                video.src = smallScreenVideo;
+            } else {
+                video.src = largeScreenVideo;
+            }
+        }
+        window.addEventListener('load', updateVideoSource);
+        window.addEventListener('resize', updateVideoSource);
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>

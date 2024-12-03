@@ -34,10 +34,20 @@ body {
 
 .hero {
     position: relative;
-    height: 70vh;
-    background-image: url('./artifacts/image.png');
+    height: 110vh;
+    /* background-image: url('./artifacts/image.png'); */
     background-size: cover;
     background-position: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
 }
 
 .overlay {
@@ -46,7 +56,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -67,13 +77,14 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center;
+    align-items: flex-end;
     /* justify-content:baseline; */
 }
 
 
 .text-container {
     padding: 3rem;
+    padding-bottom: 7rem;
     flex: 3;
     text-align: right;
     width: 50%;
@@ -87,13 +98,11 @@ body {
     line-height: 1.2;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 2.25rem;
 }
 
 .text-container h1 {
     font-size: 3.75rem;
     width: 43%;
-    
 }
 
 .text-container h2 {
@@ -103,7 +112,7 @@ body {
 
 .homeSection{
     color: #ccc;
-    background: #1a1a1a;
+    background: white;
     text-align: left;
     padding: 3rem;
 }
@@ -119,7 +128,7 @@ body {
 
 
 .brands {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 #our-brands {
@@ -129,4 +138,24 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media (max-width:400px){
+    .text-container h1 {
+        font-size: 3rem;
+        width: 43%; 
+    }
+    .text-container{
+        padding: 0.5rem 5rem 1rem 1rem;
+    }
+    .text-container h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .content{
+        
+    }
+    .hero{
+        height: 100vh;
+    }
 }
