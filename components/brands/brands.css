@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background: #1a1a1a;
+    background: #fdf0eb;
     /* 15151e */
     overflow-x: hidden;
 }
@@ -46,7 +46,7 @@ body {
     margin-top: 100px;
     margin-left: 0px;
     margin-bottom: 100px;
-    background-color: #1a1a1a;
+    background-color: #fdf0eb;
 
 }
 
@@ -91,40 +91,37 @@ body {
     right: 70px; /* Adjusts the horizontal position */
 }
 
-.brand-text-container h1 {
-
-}
 
 .order-container {
     position: absolute;
     bottom: 55px; /* Adjusts the vertical position */
-    right: 75px; /* Adjusts the horizontal position */
+    right: 1090px; /* Adjusts the horizontal position */
 }
 
 /* Background images for each block */
 .block-1 {
-    background: url('../../artifacts/enoki.png') no-repeat center;
+    background: url('../../artifacts/Enoki.png') no-repeat center;
     background-size: contain;
     margin-left:0px;
 }
 
 .block-2 {
-    background: url('../../artifacts/tahini.png') no-repeat center;
+    background: url('../../artifacts/Tahini.png') no-repeat center;
     background-size: contain;
 }
 
 .block-3 {
-    background: url('../../artifacts/ambersar.png') no-repeat center;
+    background: url('../../artifacts/Ambersar.png') no-repeat center;
     background-size: contain;
 }
 
 .block-4 {
-    background: url('../../artifacts/tobiko.png') no-repeat center;
+    background: url('../../artifacts/Tobiko.png') no-repeat center;
     background-size: contain;
 }
 
 .block-5 {
-    background: url('../../artifacts/rumali.png') no-repeat center;
+    background: url('../../artifacts/Rumali.png') no-repeat center;
     background-size: contain;
 
 }
@@ -146,3 +143,17 @@ body {
     height: 40px;
     
 }
+
+.order-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #CE5300;
+    color: #fff;
+    font-size: 25px;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif
+    
+  }
