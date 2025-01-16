@@ -4,111 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+    <link rel="stylesheet" href="careers.css">
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .highlight {
-            color: #b48e2f;
-            font-weight: bold;
-        }
-
-        .cta {
-            margin-top: 30px;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 14px 30px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: white;
-            background-color: #b48e2f;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .cta a:hover {
-            background-color: #a07c24;
-        }
-
-        .image-section {
-            margin: 40px 0;
-        }
-
-        .image-section img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .info-section {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 900px;
-        }
-
-        .info-box {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 250px;
-            text-align: center;
-        }
-
-        .info-box h3 {
-            color: #b48e2f;
-            margin-bottom: 10px;
-        }
-
-        .info-box p {
-            font-size: 0.95rem;
-            color: #666;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includedFooter").load("../footer/footer.html", function() {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "../footer/footer.css"
+        }).appendTo("head"); 
+      });
+    });
+    $(function(){
+      $("#includedHeader").load("../header/header.html", function() {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "../header/header.css"
+        }).appendTo("head"); 
+      }); 
+    });
+    </script>
 </head>
-<body>
+<body class="careers-body">
+    <div id="includedHeader"></div>
+    <div class="careers">
     <div class="container">
         <h1>Join Our Premium Team</h1>
         <p>Are you passionate about creating exceptional culinary experiences? <span class="highlight">We’d love to hear from you!</span></p>
@@ -116,10 +38,6 @@
 
         <div class="cta">
             <a href="mailto:careers@premiumrestaurant.com">Send Your Resume</a>
-        </div>
-
-        <div class="image-section">
-            <img src="https://via.placeholder.com/600x400" alt="Team working in a premium restaurant">
         </div>
 
         <div class="info-section">
@@ -137,9 +55,8 @@
             </div>
         </div>
     </div>
+    </div>
+    <div id="includedFooter"></div>
 
-    <footer>
-        © 2025 Premium Restaurant. All rights reserved.
-    </footer>
 </body>
 </html>

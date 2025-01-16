@@ -18,7 +18,7 @@
 
         <nav class="nav">
             <div class="logo-container">
-                <a href="/">
+                <a href="/" style="display: flex;">
                     <img src="artifacts/EHLogo.png" class="logo-img"></img>
                 </a>
                 <div class="logo">
@@ -67,7 +67,7 @@
     $(document).ready(function(){
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            if (scroll >= 130) {
+            if (scroll >= 380) {
                 $(".nav").addClass("scrolled");
                 $("li a").addClass("a-scrolled");
             } else {

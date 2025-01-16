@@ -1,88 +1,93 @@
-
-#includedFooter {
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    margin-top: auto;
-    width: 100%;
+#includedHeader{
+  height: 100px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-  }
-  
-  .careers {
-    padding: 50px 20px;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .tagline {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .info {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .email {
-    font-size: 1.2rem;
-    color: #b33a3a;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .email:hover {
-    text-decoration: underline;
-  }
-  
-  .image img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  @media (min-width: 768px) {
-    .content {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .info, .image {
-      flex: 1;
-    }
-  
-    .info {
-      text-align: left;
-    }
-  }
+#includedHeader .header .nav,
+#includedHeader .header li a {
+  background-color: #fdf0eb !important;    ;
+  color: #555 !important;
+}
+
+.careers-body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.careers .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.careers h1 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.careers p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+.careers .highlight {
+  color: #b48e2f;
+  font-weight: bold;
+}
+
+.careers .cta {
+  margin-top: 30px;
+}
+
+.careers .cta a {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #b48e2f;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.careers .cta a:hover {
+  background-color: #a07c24;
+}
+
+.careers .info-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.careers .info-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 300px;
+  text-align: center;
+}
+
+.careers .info-box h3 {
+  color: #b48e2f;
+  margin-bottom: 10px;
+}
+
+.careers .info-box p {
+  font-size: 0.95rem;
+  color: #666;
+}

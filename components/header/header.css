@@ -1,4 +1,4 @@
-.nav {
+.header .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,37 +11,38 @@
     height: 90px;
 }
 
-.logo-container {
+.header .logo-container {
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-.logo {
+.header .logo {
     font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1;
-    color: #555;
+    /* color: #555; */
 }
 
-.logo p:first-child {
+.header .logo p:first-child {
     margin: 0;
     margin-top: 4px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
-.logo p:last-child {
+.header .logo p:last-child {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-top: 3px;
 }
 
-.logo-img {
-    max-width: 50px;
+.header .logo-img {
+    max-width: 60px;
     height: auto;
 }
 
 
-nav ul{
+.header nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -51,7 +52,7 @@ nav ul{
 }
 
 
-li a {
+.header li a {
     color: white;
     text-decoration: none;
     margin-left: 30px;
@@ -60,24 +61,24 @@ li a {
     font-weight: normal;
 }
 
-a.active {
+.header a.active {
     color: aqua;
     font-weight: bold;
 }
 
-.nav a:hover {
+.header .nav a:hover {
     color: #ff2a2a;
 }
 
-.nav.scrolled {
+.header .nav.scrolled {
     background-color: #fdf0eb;    ;
-    color: black;
+    color: #555;
     transition: background-color 0.3s;
 }
-.a-scrolled{
-    color: black;
+.header .a-scrolled{
+    color: #373636;
 }
-.sidebar{
+.header .sidebar{
     position: fixed;
     top: 0;
     right: 0;
@@ -92,12 +93,12 @@ a.active {
     justify-content: flex-end;
 }
 
-.sidebar li{
+.header .sidebar li{
     margin-top: 1.25rem;
     margin-bottom: 2rem;
 }
 
-.hamburger {
+.header .hamburger {
     display: none;
     font-size: 28px;
     background: none;
@@ -109,16 +110,16 @@ a.active {
 }
 
 @media(max-width: 765px) {
-    .hideOnMobile{
+    .header .hideOnMobile{
         display: none;
     }
 }
 
 @media(max-width: 764px) {
-    .sidebar{
+    .header .sidebar{
         width: 100%;
     }
-    .hamburger{
+    .header .hamburger{
         display: inline;
     }
     .header {
