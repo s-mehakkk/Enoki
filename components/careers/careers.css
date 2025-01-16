@@ -1,136 +1,88 @@
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
 #includedFooter {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
     margin-top: auto;
     width: 100%;
 }
-
-
-
-.cbody {
-    background-color: #f0f0f0;
-    height: 100vh;
+* {
     margin: 0;
     padding: 0;
-}
-
-
-.career-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 90vh; /* Adjust height as needed */
-    background-color: rgb(255, 255, 255); /* Matches Rebel Foods' dark theme */
-    color: #fff; /* White text color */
-    padding: 0 10%;
-    font-family: Arial, sans-serif;
-}
-
-.career-content {
-    flex: 1;
-    text-align: left;
-}
-
-.career-content h1 {
-    font-size: 3rem;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .careers {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 20px;
-    color: #f44336; /* Gold color for the heading */
-}
-
-.career-content p {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #1a1a1a;
-}
-
-.career-email {
-    color: #00aaff; /* Blue for the email link */
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.career-email:hover {
-    text-decoration: underline;
-}
-
-.career-graphic {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.career-graphic img {
-    width: 50%;
-    max-width: 300px;
-    height: auto;
-}
-
-
-.mainDiv{
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-}
-
-
-
-.empty{
-    height: 450px;
-}
-
-.header {
-    background-color: #1a1a1a;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .career-container {
-        flex-direction: column;
-        padding: 0 5%;
-        height: 400px;
-        margin-top: 140px;
-        background-color: #f0f0f0;
+    gap: 30px;
+  }
+  
+  .info {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .email {
+    font-size: 1.2rem;
+    color: #b33a3a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .email:hover {
+    text-decoration: underline;
+  }
+  
+  .image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    .career-content h1 {
-        font-size: 2rem;
+  
+    .info, .image {
+      flex: 1;
     }
-
-    .career-content p, .career-email {
-        font-size: 1.5rem;
+  
+    .info {
+      text-align: left;
     }
-
-    .career-graphic img {
-        width: 70%;
-        max-width: 400px;
-    }
-    .career-content p, .career-email {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .career-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .career-content p, .career-email {
-        font-size: 1rem;
-    }
-
-    .career-graphic img {
-        width: 90%;
-        max-width: 200px;
-    }
-    .career-content p, .career-email {
-        font-size: 1.2rem;
-    }
-}
+  }

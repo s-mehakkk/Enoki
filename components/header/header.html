@@ -8,14 +8,25 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo-container">
+        <!-- <div class="logo-container">
             <a href="/">
                 <img src="../../artifacts/EHLogo.png" alt="ENOKI Logo" class="logo-img">
-                <!-- <img src="file:///Users/apple/Desktop/Enoki/artifacts/enokiLogo.png" alt="ENOKI Logo" class="logo-img"> -->
+ <img src="file:///Users/apple/Desktop/Enoki/artifacts/enokiLogo.png" alt="ENOKI Logo" class="logo-img">
             </a>
-            <h1 style="color: white;">Enoki Hospitality</h1>
-        </div>
+            <h1>Enoki Hospitality</h1>
+        </div> -->
+
         <nav class="nav">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="src/assets/EHLogo.png" class="logo-img"></img>
+                </a>
+                <div class="logo">
+                  <p>Enoki</p>
+                  <p>Hospitality</p>
+                </div>
+            </div>
+
             <ul class = "sidebar">
                 <li><a class = "" onclick="hideSidebar()" href="/">Home</a></li>
                 <!-- <li><a class = "" onclick="hideSidebar()" href="/#our-brands">Our Brands</a></li> -->
@@ -57,9 +68,11 @@
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             if (scroll >= 130) {
-                $(".header").addClass("scrolled");
+                $(".nav").addClass("scrolled");
+                $("li a").addClass("a-scrolled");
             } else {
-                $(".header").removeClass("scrolled");
+                $(".nav").removeClass("scrolled");
+                $("li a").removeClass("a-scrolled")
             }
         });
     });
