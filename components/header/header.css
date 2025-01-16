@@ -7,9 +7,8 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
-    height: 100px;
+    height: 90px;
 }
 
 .logo-container {
@@ -71,7 +70,7 @@ a.active {
 }
 
 .nav.scrolled {
-    background-color: white;
+    background-color: #fdf0eb;    ;
     color: black;
     transition: background-color 0.3s;
 }
