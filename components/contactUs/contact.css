@@ -45,6 +45,7 @@
 
 .contact-page .info {
     display: flex;
+    align-items: flex-start !important;
     gap: 20px;
     align-items: center;
 }
@@ -139,3 +140,9 @@
     font-size: 0.9rem;
     color: #333;
 }
+
+@media(max-width: 700px) {
+    .contact-page {
+        grid-template-columns: none;
+    }
+  }

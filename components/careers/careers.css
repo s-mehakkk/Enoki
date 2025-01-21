@@ -91,3 +91,11 @@
   font-size: 0.95rem;
   color: #666;
 }
+
+
+@media(max-width: 700px) {
+  .careers .info-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
