@@ -37,6 +37,16 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('#includedMobileBrands').load('./components/mobilebrands/mobilebrands.html', function () {
+        $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./components/mobilebrands/mobilebrands.css"
+        }).appendTo("head");
+    });
+});
+
 window.onload = function() {
     var headerTwo = document.getElementById('headerTwo');
     var headerOne = document.getElementById('headerOne');
