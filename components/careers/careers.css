@@ -112,4 +112,12 @@
     flex-direction: column;
     gap: 30px;
   }
+  .careers h1 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  #includedHeader .header li a {
+  background-color: transparent !important;    ;
+  color: white !important;
+  }
 }

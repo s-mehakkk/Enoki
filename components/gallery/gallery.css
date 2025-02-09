@@ -44,4 +44,8 @@
         columns: 2;
         margin: 10px auto 0 auto;
     }
+    #includedHeader .header li a {
+        background-color: transparent !important;    ;
+        color: white !important;
+    }
 }
