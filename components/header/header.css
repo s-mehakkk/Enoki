@@ -75,7 +75,7 @@
 
 .header .nav.scrolled {
     background-color: #fdf0eb;    ;
-    color: #555;
+    color: #555 !important;
     transition: background-color 0.3s;
 }
 .header .a-scrolled{

@@ -104,6 +104,17 @@ body {
     font-size: 1.75rem;
 }
 
+.about p{
+    color: #555 !important;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Avenir Next Condensed Italic", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .text-container h1 {
     font-size: 3.75rem;
     width: 43%;
@@ -222,27 +233,24 @@ html {
 
 }
 
-
-
 .scroll-section p{
-    color: black;
-    color: black;
+    color: #555;
     margin: 0;
-    letter-spacing: 2px;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
-    font-family: "Avenir Light Oblique", sans-serif;
+    font-family: "Avenir Next Condensed Italic", sans-serif;
     font-size: 1rem;
+    text-align: justify;
+    padding: 0px 15px;
 }
 
 .scroll-section h2{
     color: black;
-    color: black;
     margin: 0;
     letter-spacing: 2px;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
     font-family: "Avenir Light Oblique", sans-serif;
     font-size: 1.75rem;
